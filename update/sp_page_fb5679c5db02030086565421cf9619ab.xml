@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <css/>
+        <draft>false</draft>
+        <id>technow_28_1</id>
+        <internal>false</internal>
+        <public>false</public>
+        <roles/>
+        <short_description>Tech Now 28</short_description>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>nthumma</sys_created_by>
+        <sys_created_on>2017-10-24 23:31:15</sys_created_on>
+        <sys_id>fb5679c5db02030086565421cf9619ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>technow_28_1</sys_name>
+        <sys_package display_value="TechNow 28" source="sn_technow_28">98ae92a047702200c380b6a0ec9a7167</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TechNow 28">98ae92a047702200c380b6a0ec9a7167</sys_scope>
+        <sys_update_name>sp_page_fb5679c5db02030086565421cf9619ab</sys_update_name>
+        <sys_updated_by>nthumma</sys_updated_by>
+        <sys_updated_on>2017-10-24 23:31:15</sys_updated_on>
+        <title>technow28</title>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=fb5679c5db02030086565421cf9619ab"/>
+</record_update>

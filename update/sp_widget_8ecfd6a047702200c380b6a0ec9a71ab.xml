@@ -34,12 +34,17 @@
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
   
-	var table = $sp.getParameter("table");
+	
+	//Reading table from the URL
+	var table = $sp.getParameter("table") || 'incident' ;
+	//Reading limit from the URL
+	var limit = $sp.getParameter("limit") || 10;
+	
 	data.incidents = [];
 	
 	var gr = new GlideRecord(table);
 	gr.addActiveQuery();
-	gr.setLimit(10);
+	gr.setLimit(limit);
 	gr.orderByDesc('sys_updated_on');
 	gr.query();	
 	
@@ -59,14 +64,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-07-20 17:33:57</sys_created_on>
         <sys_id>8ecfd6a047702200c380b6a0ec9a71ab</sys_id>
-        <sys_mod_count>56</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_name>simpledemo</sys_name>
         <sys_package display_value="TechNow 28" source="sn_technow_28">98ae92a047702200c380b6a0ec9a7167</sys_package>
         <sys_policy/>
         <sys_scope display_value="TechNow 28">98ae92a047702200c380b6a0ec9a7167</sys_scope>
         <sys_update_name>sp_widget_8ecfd6a047702200c380b6a0ec9a71ab</sys_update_name>
         <sys_updated_by>nthumma</sys_updated_by>
-        <sys_updated_on>2017-10-24 23:16:52</sys_updated_on>
+        <sys_updated_on>2017-10-24 23:47:28</sys_updated_on>
         <template><![CDATA[<div class="panel panel-default">
   <div class="panel-heading" style="text-transform: capitalize;">{{data.table_name}}s</div>
   <div class="panel-body">
